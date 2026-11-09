@@ -42,6 +42,7 @@ DIAS_CALENDARIO_ANIO: Final[int] = 365      # los horizontes de la UI son calend
 PERIODOS_HISTORICO: Final[tuple[str, ...]] = ("1y", "2y", "5y", "10y", "max")
 PERIODO_HISTORICO_DEFECTO: Final[str] = "5y"
 TASA_LIBRE_RIESGO_DEFECTO: Final[float] = 0.04   # editable; usada en Sharpe/Sortino
+TASA_DESCUENTO_DEFECTO: Final[float] = 0.08   # costo de oportunidad para el VPN
 
 # --------------------------------------------------------------------------- #
 #  Simulación
