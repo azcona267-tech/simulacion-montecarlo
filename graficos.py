@@ -17,6 +17,7 @@ from typing import TYPE_CHECKING, Mapping
 
 import numpy as np
 import pandas as pd
+from constantes import CICLO_MODELOS as _CICLO_MODELOS, TEMA
 import matplotlib
 matplotlib.rcParams["text.parse_math"] = False
 from matplotlib.collections import LineCollection
@@ -31,21 +32,6 @@ if TYPE_CHECKING:  # solo para tipado; evita acoplar graficos con riesgo en tiem
 Matriz = NDArray[np.float64]
 Vector = NDArray[np.float64]
 
-TEMA: dict[str, str] = {
-    "fondo": "#242424",        # coincide con el modo oscuro de CustomTkinter
-    "fondo_ejes": "#1c1c1c",
-    "texto": "#e8e8e8",
-    "texto_suave": "#9a9a9a",
-    "borde": "#444444",
-    "grid": "#333333",
-    "acento": "#4cc9f0",
-    "ganancia": "#2ecc71",
-    "perdida": "#ff4d6d",
-    "media": "#ffd166",
-    "mediana": "#c77dff",
-    "referencia": "#ffffff",
-}
-_CICLO_MODELOS: tuple[str, ...] = ("#4cc9f0", "#ff9f1c", "#2ecc71", "#c77dff")
 _PERCENTILES_CONO: tuple[float, ...] = (5, 25, 50, 75, 95)
 
 
