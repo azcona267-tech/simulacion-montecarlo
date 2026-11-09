@@ -17,6 +17,8 @@ from typing import TYPE_CHECKING, Mapping
 
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.rcParams["text.parse_math"] = False
 from matplotlib.collections import LineCollection
 from matplotlib.figure import Figure
 from matplotlib.lines import Line2D
